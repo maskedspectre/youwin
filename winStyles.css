@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+
+    -webkit-animation: flash 1s infinite;  /* Safari 4+ */
+    -moz-animation: flash 1s infinite;  /* Fx 5+ */
+    -o-animation: flash 1s infinite;  /* Opera 12+ */
+    animation: flash 1s infinite;  /* IE 10+, Fx 29+ */
+    }
+    
+    @-webkit-keyframes flash {
+    0%, 49% {
+        background-color: rgb(117, 209, 63);
+        border: 3px solid #e50000;
+    }
+    50%, 100% {
+        background-color: #e50000;
+        border: 3px solid rgb(117, 209, 63);
+    } 
+}
+
+.flash {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: yellow;
+    animation: blinker .25s linear infinite;
+  }
+  
+@keyframes blinker {
+50% {
+    opacity: 0;
+}
+}
+
+h1, p {
+top: 50%;
+left: 50%;
+color: yellow;
+animation: blinker .35s linear infinite;
+}
+
+@keyframes blinker {
+50% {
+    opacity: 0;
+}
+}
+
+@keyframes slow-blink {
+    100%{
+        opacity: 0;
+    }
+}
+
+.win {
+    position: absolute;
+    top: 30%;
+    left: 40%;
+    transform: rotate(0.5deg);
+}
+
+.cash {
+    position: absolute;
+    top: 25%;
+    left: 5%;
+    font-size: 70px;
+    transform: rotate(-25deg);
+}
+
+.ipod-img {
+    transform: rotate(.001deg);
+}
+  
+.iphone {
+    font-size: 26px;
+    position: absolute;
+    top: 80%;
+    left: 54%;
+    transform: rotate(-1deg);
+}
+
+.big-tits {
+    padding: 5px 10px;
+    background-color: gold;
+    border-radius: 5px;
+    font-family: sans-serif;
+    font-weight: bold;
+    position: absolute;
+    top: 15%;
+    right: 15%;
+    transform: rotate(0.8deg);
+    animation: slow-blink .85s infinite;
+}
+
+.piss-giant {
+    background-color: gold;
+    color: black;
+    position: absolute;
+    opacity: 0;
+    height: 100%;
+    width: 100%;
+    font-size: 500px;
+    font-family: sans-serif;
+    padding-left: 350px;
+    padding-top: 175px;
+    animation: piss-blink 5s alternate infinite;
+    animation-delay: 5s
+}
+
+@keyframes piss-blink{
+    from {opacity: 0;}
+    to   {opacity: 1;}
+}
